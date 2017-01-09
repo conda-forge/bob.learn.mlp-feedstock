@@ -10,7 +10,7 @@ source:
   url: https://pypi.io/packages/source/b/bob.learn.mlp/bob.learn.mlp-{{ version }}.zip
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - bob.learn.activation
     - cmake
     - pkg-config
-    - boost 1.61.*
+    - boost 1.63.*
 
   run:
     - python
@@ -36,7 +36,7 @@ requirements:
     - bob.io.base
     - bob.math
     - bob.learn.activation
-    - boost 1.61.*
+    - boost 1.63.*
 
 test:
   commands:
@@ -52,7 +52,7 @@ test:
 
 about:
   home: https://www.idiap.ch/software/bob/
-  license: Modified BSD License (3-clause)
+  license: BSD 3-Clause
   summary: Bob's Multi-layer Perceptron and Trainers
 
 extra:
